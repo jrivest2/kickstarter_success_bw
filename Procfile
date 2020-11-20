@@ -1,3 +1,3 @@
-web: gunicorn twitoff:APP -t 120
+web: gunicorn kickstarter_success:APP -t 120
 
 
