@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import pickle
 from flask import request
-# import en_core_web_lg
+import en_core_web_lg
 
 # nlp = en_core_web_lg.load()
 nlp = spacy.load("en_core_web_lg")
