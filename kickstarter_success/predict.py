@@ -11,7 +11,7 @@ import en_core_web_lg
 
 nlp = en_core_web_lg.load()
 # nlp = spacy.load("en_core_web_lg")
-dataframe1 = 'https://raw.githubusercontent.com/B-Meister/ds-bw-kickstarter/main/live.csv'
+dataframe1 = 'https://raw.githubusercontent.com/jrivest2/kickstarter_success_bw/main/live.csv'
 data = pd.read_csv(dataframe1)
 
 vectorized = [nlp(text).vector for text in data['blurb']]
