@@ -7,10 +7,10 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import pickle
 from flask import request
-import en_core_web_lg
+# import en_core_web_lg
 
-nlp = en_core_web_lg.load()
-# nlp = spacy.load("en_core_web_lg")
+# nlp = en_core_web_lg.load()
+nlp = spacy.load("en_core_web_lg")
 dataframe1 = 'https://raw.githubusercontent.com/jrivest2/kickstarter_success_bw/main/live.csv'
 data = pd.read_csv(dataframe1)
 
