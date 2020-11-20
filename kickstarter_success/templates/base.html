@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kickstarter Success - {{ title }}</title>
+  <link rel="stylesheet" href="https://unpkg.com/picnic" />
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/" class="brand"><span>Kickstarter Success!</span></a>
+
+    <!-- responsive-->
+    <input id="bmenub" type="checkbox" class="show">
+    <label for="bmenub" class="burger pseudo button">Menu</label>
+
+ 
+  </nav>
+
+  <article class="flex two" style="padding: 3em 1em;">
+    {% block content %}
+    <div>
+       <h1>{{ title }}</h1>
+        <form action="/predict" method="post">
+          
+          <input type="text" name="project_name" placeholder="Enter product Campaign">
+          <input type="text" name="project_desc" placeholder="campaign text to predict">
+          <input type="submit" value="Predict Success!">
+          
+        </form>
+ 
+      </div>
+      <div>
+       
+    </div>
+    {% endblock %}
+  </article>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/umbrellajs"/> -->
+</body>
+
+</html>
